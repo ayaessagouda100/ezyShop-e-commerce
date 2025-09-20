@@ -36,7 +36,7 @@ export default function CheckoutSession() {
   async function handleCreditPayment(values: { details: string, phone: string, city: string }) {
     const data = await creditPayment(cartId, values)
     await getCart()
-    window.open(data.session.url)
+    window.location.href = data.session.url
   }
 
   async function handleCashPayment(values: { details: string, phone: string, city: string }) {
