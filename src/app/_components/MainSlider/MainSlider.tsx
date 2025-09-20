@@ -16,7 +16,7 @@ export default function MainSlider() {
   };
   return (
     <div className="grid grid-cols-12 my-5">
-      <div className=" col-span-8">
+      <div className=" md:col-span-8 col-span-12">
         <Slider {...settings}>
           <div>
             <Image src='/images/slider.gif' alt="image4" width={1000} height={1000}  className="w-full h-60 object-cover" />

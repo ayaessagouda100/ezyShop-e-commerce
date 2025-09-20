@@ -14,7 +14,7 @@ export default async function BrandPage({ params }:{params:{id:string}}) {
 
   return (
     <div className="flex justify-center items-center min-h-screen p-6 bg-gray-50">
-      <Card className=" w-1/3  rounded-2xl">
+      <Card className=" md:w-1/3 w-1/2 rounded-2xl">
         
         <CardContent className="flex flex-col items-center space-y-4">
           <Image

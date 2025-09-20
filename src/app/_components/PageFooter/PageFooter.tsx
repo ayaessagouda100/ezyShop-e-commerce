@@ -24,7 +24,7 @@ export default function PageFooter() {
 
                     <hr className="my-6 text-gray-300 " />
 
-                    <div className="flex flex-col md:flex-row justify-between items-center text-gray-700 mx-20">
+                    <div className="flex flex-col md:flex-row justify-between items-center text-gray-700 md:mx-20">
                         <div className="flex items-center space-x-4 mb-4 md:mb-0">
                             <span className="font-semibold text-lg">Payment Partners</span>
                             <i className="fa-brands fa-amazon-pay fa-xl"></i>
@@ -32,7 +32,6 @@ export default function PageFooter() {
                             <img alt="visa" loading="lazy" width="41" height="26"  src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/card-visa.svg"></img>
                             <img alt="tabby" loading="lazy" width="41" height="26" src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/tabby_v2.svg"></img>
                             <img alt="tamara" loading="lazy" width="41" height="26" src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/tamara-en.svg"></img>
-                            
                             <i className="fa-brands fa-apple-pay fa-2xl"></i>
                         </div>
 
