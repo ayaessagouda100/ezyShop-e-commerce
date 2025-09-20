@@ -36,6 +36,10 @@ export default function CheckoutSession() {
   async function handleCreditPayment(values: { details: string, phone: string, city: string }) {
     const data = await creditPayment(cartId, values)
     await getCart()
+    if (!data?.session?.url) {
+  console.error("Session not found:", data);
+  return;
+}
     window.location.href = data.session.url
   }
 
