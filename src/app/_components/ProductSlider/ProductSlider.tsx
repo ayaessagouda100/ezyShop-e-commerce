@@ -14,18 +14,20 @@ export default function ProductSlider({ images }: { images: string[] }) {
     autoplay: true,
     autoplaySpeed: 2000,
   };
-  return (
-    <>
-      <Slider {...settings}>
-        {
-          images.map((image) => {
-            return <div key={image}>
-              <Image src={image} alt="image4" width={1000} height={1000} className="w-full h-96 object-center" />
-            </div>
-          })
-        }
 
-      </Slider>
-    </>
-  )
+  return (
+    <Slider {...settings}>
+      {images.map((image) => (
+        <div key={image} className="px-2">
+          <Image
+            src={image}
+            alt="product image"
+            width={1000}
+            height={1000}
+            className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-md"
+          />
+        </div>
+      ))}
+    </Slider>
+  );
 }

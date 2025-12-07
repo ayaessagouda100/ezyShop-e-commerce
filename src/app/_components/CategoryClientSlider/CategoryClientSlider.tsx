@@ -6,54 +6,65 @@ import React from "react";
 import Slider from "react-slick";
 
 export default function CategoryClientSlider({ data }: { data: Data[] }) {
-  console.log(data)
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
         breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         },
       },
-    ]
+    ],
   };
 
   return (
-    <>
-      <div className="my-5 w-[90%] mx-auto">
-        <div className="cursor-pointer">
-          <Slider {...settings}>
-            {data.map((obj) => (
-              <div key={obj._id} className="px-1 rounded-full ">
-                <Link  href={`/categories/${obj._id}`}>
-      <Image
-        src={obj.image}
-        alt={obj.name}
-        width={1000}
-        height={1000}
-        className="w-full h-40 object-center"
-      />
-      <h2 className="font-bold text-center pt-2">{obj.name}</h2>
-    </Link>
+    <div className="my-5 w-[95%] mx-auto">
+      <Slider {...settings}>
+        {data.map((obj) => (
+          <div key={obj._id} className="px-2">
+            <Link href={`/categories/${obj._id}`}>
+              <div className="flex flex-col items-center">
+                <Image
+                  src={obj.image}
+                  alt={obj.name}
+                  width={200}
+                  height={200}
+                  className="w-full h-32 sm:h-40 object-cover rounded-md"
+                />
+                <h2 className="font-semibold text-center pt-2 text-sm sm:text-base">
+                  {obj.name}
+                </h2>
               </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-    </>
+            </Link>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 }
