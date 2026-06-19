@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EzyShop
 
-## Getting Started
+Modern e-commerce web application built with Next.js and TypeScript, focused on delivering a smooth and responsive shopping experience.
 
-First, run the development server:
+## Features
+
+* User Authentication
+* Product Search
+* Category Filtering
+* Shopping Cart
+* Wishlist
+* Responsive Design
+* Product Details Page
+* Toast Notifications
+
+## Tech Stack
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* React
+* Context API
+
+## Live Demo
+
+https://your-demo-link.vercel.app
+
+## Installation
 
 ```bash
+git clone https://github.com/ayaessagouda100/ezyShop-e-commerce.git
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Home Page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<img width="438" height="1600" alt="WhatsApp Image 2026-06-19 at 9 01 38 PM" src="https://github.com/user-attachments/assets/586c3f26-0b3f-4155-b765-9f9e204adfde" />
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### Product Details
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img width="1345" height="628" alt="Screenshot 2026-06-19 210617" src="https://github.com/user-attachments/assets/4a874ff9-9b72-42ab-9d1a-24337b60723a" />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Payment Test Mode
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img width="1600" height="1002" alt="WhatsApp Image 2026-06-19 at 9 01 39 PM (1)" src="https://github.com/user-attachments/assets/4636e770-cf2c-411b-8b9f-5737a7900d7f" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
